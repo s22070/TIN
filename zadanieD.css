@@ -1,0 +1,24 @@
+.myDiv {
+    background-color: lightblue;
+    text-align: center;
+    margin: 10%;
+}
+.article-content {
+    margin: 0 40px;
+    border: 2px solid sienna;
+    background-color: green;
+}
+.content {
+    background-color: purple;
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+header {
+    border: 2px solid blue;
+}
+a:hover {
+    color: blueviolet;
+}

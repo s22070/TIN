@@ -1,0 +1,13 @@
+input {
+    width: 100%;
+}
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    font-family: "Arial Rounded MT Bold", serif;
+}
+input[type=password] {
+    border: 2px solid red;
+    border-radius: 4px;
+    font-family: Algerian, serif;
+}
