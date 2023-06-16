@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dodaj akapit</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="4b.js"></script>
+</head>
+<body>
+<h1>Dodaj akapit</h1>
+<form>
+    <label for="input-text">Wpisz tekst akapitu:</label><br>
+    <br>
+    <input type="text" id="input-text" name="input-text"><br>
+    <br>
+    <button type="button" onclick="addParagraph()">Dodaj akapit</button>
+</form>
+<div id="paragraphs"></div>
+<script>
+    function addParagraph() {
+        const input = document.getElementById("input-text");
+        const text = input.value;
+        const newParagraph = document.createElement("p");
+        const paragraphText = document.createTextNode(text);
+        newParagraph.appendChild(paragraphText);
+        const div = document.getElementById("paragraphs");
+        div.appendChild(newParagraph);
+        input.value = "";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Walidacja formularza</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function validate(event) {
+      event.preventDefault();
+
+      const numberField = document.getElementById("number");
+      const textField = document.getElementById("text");
+      const number = numberField.value;
+      const text = textField.value;
+      let score = true;
+
+      if (number === "" || isNaN(number)) {
+        alert("Proszę wprowadzić liczbę w polu numerycznym.");
+        score = false;
+      }
+
+      if (text === "") {
+        alert("Proszę wypełnić pole tekstowe.");
+        score = false;
+      }
+
+      if (score === true) {
+        confirm("Formularz zwalidowany poprawnie!");
+      }
+      console.log(score)
+      return score;
+    }
+  </script>
+</head>
+<body>
+<h1>Walidacja formularza</h1>
+<form onsubmit="validate(event)">
+  <label for="number">Liczba:</label>
+  <br>
+  <input type="number" id="number" name="number" required>
+  <br>
+  <br>
+  <label for="text">Tekst:</label><br>
+  <input type="text" id="text" name="text" required>
+  <br>
+  <br>
+  <button type="submit">Sprawdz</button>
+</form>
+</body>
+</html>
