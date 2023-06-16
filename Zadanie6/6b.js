@@ -32,8 +32,8 @@ app.post('/formdata', (req, res) => {
 
     const formDataHTML = `
     <h1>Form data:</h1>
-    <p><strong>Imię:</strong> ${name}</p>
-    <p><strong>Naziwsko:</strong> ${sureName}</p>
+    <p><strong>Imie:</strong> ${name}</p>
+    <p><strong>Nazwisko:</strong> ${sureName}</p>
     <p><strong>Wiek:</strong> ${age}</p>
   `;
 
